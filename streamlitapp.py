@@ -25,5 +25,4 @@ if use_example_file:
 
 if uploaded_file:
     df = pd.read_excel(uploaded_file)
-    c = alt.Chart(df).mark_circle().encode(x='Date', y=['Cases','No Symptom"], size='c', color='c')
-    st.altair_chart(c, width=-1)
+    st.dataframe(df)
