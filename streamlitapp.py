@@ -19,8 +19,8 @@ use_example_file = st.checkbox(
 
 # If CSV is not uploaded and checkbox is filled, use values from the example file
 # and pass them down to the next if block
-if use_example_file:
-    uploaded_file = "Shanghai_COVID.xlsx"
+#if use_example_file:
+#    uploaded_file = "Shanghai_COVID.xlsx"
 
 
 if uploaded_file:
