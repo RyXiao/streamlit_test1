@@ -28,6 +28,6 @@ if uploaded_file:
     df = pd.read_excel(uploaded_file)
     st.dataframe(df)
     chart_alt = alt.Chart(df).mark_line().encode(x="Date",   y="Cases",   color="Category" ).properties(
-   height=300, width=500
+   height=300, width=1000
     )
     st.altair_chart(chart_alt)
