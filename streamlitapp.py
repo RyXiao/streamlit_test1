@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas as pd
+import altair as alt
+
+
 st.write(
     """
 # Shanghai COVID Curve
@@ -22,4 +25,4 @@ if use_example_file:
 
 if uploaded_file:
     df = pd.read_excel(uploaded_file)
-    st.line_chart(df)
+    c = alt.Chart(df).mark_circle().encode(x='Date', y=['Cases','No Symptom"], size='c', color='c')
