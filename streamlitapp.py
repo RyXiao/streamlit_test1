@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import altair as alt
+
 
 
 st.write(
@@ -10,7 +10,7 @@ Upload your Shanghai COVID with data and cases to see the curve.
 """
 )
 
-uploaded_file = st.file_uploader("Upload EXCEL XLSX FILE", type=".XLSX")
+uploaded_file = st.file_uploader("Upload EXCEL FILE", type=".XLSX")
 
 use_example_file = st.checkbox(
     "Use example file", False, help="Use in-built example file to demo the app"
