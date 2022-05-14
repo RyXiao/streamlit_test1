@@ -24,5 +24,5 @@ use_example_file = st.checkbox(
 
 
 if uploaded_file:
-    df = pd.read_excel(uploaded_file)
+    df = pd.read_excel(uploaded_file, sheetname = 0)
     st.dataframe(df)
